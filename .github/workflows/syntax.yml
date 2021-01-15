@@ -4,5 +4,9 @@ jobs:
     task1:
         runs-on: ubuntu-latest
         steps:
-            - run: echo Checker made by Popescu David
-            - run: sum.py 6 4
+        - uses: actions/checkout@v2
+        - uses: actions/setup-python@v2
+            with:
+            python-version: 3.7
+        - run: echo Checker made by Popescu David
+        - run: phyton3 sum.py 6 4
