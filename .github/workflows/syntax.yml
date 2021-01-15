@@ -11,11 +11,23 @@ jobs:
       - name: Checker owner    
         run: echo Checker made by Popescu David
       - name: compiling
-        run: gcc -v 
-      - run: | 
+        run: gcc -v
+      - name: Test1 
+        run: | 
               if [ "$(python sum.py 4 8)" != "12" ]
               then 
                   exit 1 
               fi
-
+       - name: Test2 
+         run: | 
+              if [ "$(python sum.py 1 5)" != "6" ]
+              then 
+                  exit 1 
+              fi 
+        - name: Test3 
+          run: | 
+              if [ "$(python sum.py 10 8)" == "18" ]
+              then 
+                  exit 1 
+              fi
                 
