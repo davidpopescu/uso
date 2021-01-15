@@ -9,11 +9,11 @@ jobs:
         with:
           python-version: 3.7
       - name: Checker owner    
-      - run: echo Checker made by Popescu David
+        run: echo Checker made by Popescu David
       - name: compiling
         run: gcc -v
       - name: Tests  
-      - run:  |
+        run:  |
             if [ "$(python sum.py 4 7)" != "13" ] then; 
                 exit 1 
             fi
