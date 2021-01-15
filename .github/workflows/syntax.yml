@@ -14,7 +14,7 @@ jobs:
         run: gcc -v
       - name: Tests  
         run:  |
-            if [ "$(python sum.py 4 7)" != "13" ]
+              if [ "$(python sum.py 4 7)" != "13" ]
             then
                 exit 1 
             fi
