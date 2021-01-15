@@ -25,8 +25,14 @@ jobs:
               fi 
          
       - run: | 
-              if [ "$(python sum.py 10 8)" != "15" ]
+              if [ "$(python sum.py 10 8)" = "6" ]
               then 
                   exit 0 
+              fi
+
+      - run: | 
+              if [ "$(python sum.py 6 4)" = "12" ]
+              then 
+                  exit 1 
               fi
                 
