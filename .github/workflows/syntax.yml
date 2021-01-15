@@ -1,7 +1,7 @@
 name: syntax
 on: push
 jobs:
-  task1:
+  linux checker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,25 +11,11 @@ jobs:
       - name: Checker owner    
         run: echo Checker made by Popescu David
       - name: compiling
-        run: gcc -v
-      - name: Tests  
-        run:  |
-              if [ "$(python sum.py 4 7)" != "13" ]
-            then
-                exit 1 
-            fi
+        run: gcc -v 
+      - run:  |
+               if [ "$(python sum.py 4 7)" != "13" ]
+               then
+                 exit 1
+               fi
 
-            if [ "$(python sum.py 9 11)" != "20" ] 
-            then
-                exit 1 
-            fi
-
-            if [ "$(python sum.py 15 2)" == "17" ] 
-            then 
-                exit 1 
-            fi
-            
-            if [ "$(python sum.py -4 8)"  != "4" ]
-            then
-                exit 1 
-            fi
+                
