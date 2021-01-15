@@ -10,4 +10,4 @@ jobs:
           python-version: 3.7
       - run: echo Checker made by Popescu David
       - name: compiling
-      - run: gcc -v
+        run: gcc -v
