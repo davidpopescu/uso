@@ -1,7 +1,7 @@
 name: syntax
 on: push
 jobs:
-  linux checker:
+  checker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
