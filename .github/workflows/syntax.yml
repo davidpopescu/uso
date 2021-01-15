@@ -14,16 +14,22 @@ jobs:
         run: gcc -v
       - name: Tests  
         run:  |
-            if [ "$(python sum.py 4 7)" != "13" ] then; 
+            if [ "$(python sum.py 4 7)" != "13" ]
+            then
                 exit 1 
             fi
-            if [ "$(python sum.py 9 11)" != "20" ] then;
+
+            if [ "$(python sum.py 9 11)" != "20" ] 
+            then
                 exit 1 
             fi
-            if [ "$(python sum.py 15 2)" == "17" ] then;
+
+            if [ "$(python sum.py 15 2)" == "17" ] 
             then 
                 exit 1 
             fi
-            if [ "$(python sum.py -4 8)"  != "4" ] then;
+            
+            if [ "$(python sum.py -4 8)"  != "4" ]
+            then
                 exit 1 
             fi
