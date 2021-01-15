@@ -31,7 +31,7 @@ jobs:
               fi
 
       - run: | 
-              if [ "$(python sum.py 6 4)" = "12" ]
+              if [ "$(python sum.py 6 4)" != "10" ]
               then 
                   exit 1 
               fi
