@@ -10,4 +10,4 @@ jobs:
             python-version: 3.7
         - run: echo Checker made by Popescu David
         - run: gcc -v
-        - run: phyton3 sum.py 6 4
+        - run: phyton3 sum.py $1 $2
