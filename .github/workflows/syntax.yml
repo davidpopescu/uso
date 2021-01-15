@@ -1,0 +1,8 @@
+name: syntax
+on: push
+jobs:
+    task1:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo Checker made by Popescu David
+            - run: gcc src/suma.c
