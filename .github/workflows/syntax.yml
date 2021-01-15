@@ -12,10 +12,10 @@ jobs:
         run: echo Checker made by Popescu David
       - name: compiling
         run: gcc -v 
-      - run: |
-              if [ "$(python sum.py 4 7)" != "11" ]
-              then
-                  exit 1
-              fi
+    - run: | 
+            if [ "$(python sum.py 4 8)" != "12" ]
+            then 
+                exit 1 
+            fi
 
                 
