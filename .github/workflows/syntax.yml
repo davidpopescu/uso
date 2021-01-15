@@ -8,6 +8,22 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.7
+      - name: Checker owner    
       - run: echo Checker made by Popescu David
       - name: compiling
         run: gcc -v
+      - name: Tests  
+      - run:  |
+            if [ "$(python sum.py 4 7)" != "13" ] then; 
+                exit 1 
+            fi
+            if [ "$(python sum.py 9 11)" != "20" ] then;
+                exit 1 
+            fi
+            if [ "$(python sum.py 15 2)" == "17" ] then;
+            then 
+                exit 1 
+            fi
+            if [ "$(python sum.py -4 8)"  != "4" ] then;
+                exit 1 
+            fi
