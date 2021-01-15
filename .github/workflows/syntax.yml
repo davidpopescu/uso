@@ -8,6 +8,6 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - run: Checker made by Popescu David
+      - run: echo Checker made by Popescu David
+      - name: compiling
       - run: gcc -v
-      - run: python sum.py 1 3
