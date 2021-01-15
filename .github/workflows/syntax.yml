@@ -5,5 +5,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo Checker made by Popescu David
-            - run: gcc -v
-            - run: suma.c
+            - run: gcc -o suma suma.c
