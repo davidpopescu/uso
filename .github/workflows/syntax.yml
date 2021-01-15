@@ -25,8 +25,8 @@ jobs:
               fi 
          
       - run: | 
-              if [ "$(python sum.py 10 8)" == "18" ]
+              if [ "$(python sum.py 10 8)" != "18" ]
               then 
-                  exit 1 
+                  exit 0 
               fi
                 
